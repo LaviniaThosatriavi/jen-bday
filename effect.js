@@ -223,9 +223,9 @@ $('document').ready(function () {
 		var i;
 
 		function msgLoop(i) {
-			$("p:nth-child(" + i + ")").fadeOut('fast').delay(400).promise().done(function () {
+			$("p:nth-child(" + i + ")").fadeOut('fast').delay(1000).promise().done(function () {
 				i = i + 1;
-				$("p:nth-child(" + i + ")").fadeIn('fast').delay(700);
+				$("p:nth-child(" + i + ")").fadeIn('fast').delay(1500);
 				if (i == 50) {
 					$("p:nth-child(49)").fadeOut('fast').promise().done(function () {
 						$('.cake').fadeIn('fast');
@@ -241,5 +241,6 @@ $('document').ready(function () {
 
 	});
 });
+
 
 
